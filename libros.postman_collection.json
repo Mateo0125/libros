@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "868dec18-514b-4f36-8916-e87384599907",
+		"name": "libros",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "registro Libro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Harry potter1\",\r\n    \"autor\":\"Mateo\",\r\n    \"descripcion\":\"Es un libro de magos\",\r\n    \"publicationYear\":\"01/01/2000\",\r\n    \"paginas\":300,\r\n    \"genero\":\"magia\",\r\n    \"precio\":50.000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/libro/registroLibro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"libro",
+						"registroLibro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar libro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/libro/listarLibro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"libro",
+						"listarLibro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar libro",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"6198e7556ac19e521659188c\",\r\n    \"nombre\": \"La sirenita\",\r\n    \"autor\": \"hector\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/libro/actualizarLibro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"libro",
+						"actualizarLibro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar libro",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/libro/eliminarLibro/6198e7556ac19e521659188c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"libro",
+						"eliminarLibro",
+						"6198e7556ac19e521659188c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
